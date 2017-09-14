@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
   <head>
-    <title>About me</title>
+    <title>JulesBou - Créateur de solutions performantes et efficaces</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="favicon.ico">
 
     <meta charset="utf-8">
@@ -12,77 +12,85 @@
 
   </head>
   <body>
-    <div class="root">
 
-      <header class="header">
-        <div class="__rotated">
-          <div class="header-geometry __header">&nbsp;</div>
-          <h1>JulesBou</h1>
-          <div class="header-geometry __aside">&nbsp;</div>
-          <!--<h2 class="__blog">Blog</h2>-->
+    <main>
+
+      <section class="header">
+        <div class="section-content">
+          <div class="header-logo">Jules<span>Bou</span></div>
+          <h1 class="header-title">
+            Createur de solutions performantes et efficaces
+            <b>pour tous vos challenges en ligne</b>
+          </h1>
+          <p class="header-p">
+            Avec plus de 8 ans d'expérience pour désigner et créer des sites web,
+            nous travaillons au plus proche de nos clients pour nous assurer
+            la réussite de vos projets.
+          </p>
+
         </div>
-      </header>
-
-      <section class="main home">
-        <p><img src="moi.jpg" class="picture-me" alt="Jules Bou"></p>
-
-        <h2>who are you?!</h2>
-
-        <p>
-          Hi! I&#39;m <strong>Jules</strong> and I&#39;m a 
-          fullstack web developer since 2008. I'm specialized in Javascript
-          applications.
-        </p>
-
-        <h2>contact</h2>
-
-        <p>
-          I'm available for hire, contact via <a class="liame"></a>
-        </p>
-
-        <h2>previously</h2>
-
-        <p>Here&#39;s a list of companies i&#39;ve been working for:</p>
-
-        <ul>
-          <li><a target="_blank" href="http://startersquad.com">StarterSquad</a></li>
-          <li><a target="_blank" href="http://bridallive.com">BridalLive</a></li>
-          <li><a target="_blank" href="http://www.sparkcentral.com">Sparkcentral</a></li>
-          <li><a target="_blank" href="http://www.everlution.com">Everlution</a></li>
-          <li><a target="_blank" href="http://wisembly.com/fr">Wisembly</a></li>
-          <li><a target="_blank" href="http://sensiolabs.com">SensioLabs</a></li>
-        </ul>
-
-        <h2>projects</h2>
-
-        <ul>
-          <li><a href="/game-of-life">Conway&#39;s game of life</a></li>
-        </ul>
-
       </section>
 
-      <script>
-        window.onload = function() {
-          var liame = ['jules', 'bous@gmail', 'com'].join('.')
-          var liameEl = document.querySelector('.liame')
+      <section class="website">
+        <div class="section-content">
 
-          liameEl.textContent = liame
-          liameEl.href = 'mailto:' + liame
-        }
-      </script>
+          <h2>Sites vitrines</h2>
 
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-19244753-1']);
-        _gaq.push(['_trackPageview']);
+          <p class="website-p-center">
+            Que ce soit pour votre restaurant, vos chambres d'hôtes ou pour n'importe quelle autre activitée,
+            nous réalisons des sites vitrines simples et attrayants.
+          </p>
 
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
 
-    </div>
+          <div class="website-screenshot-fade">
+            <img src="/assets/stay/safari-stay-room-cropped.png" />
+          </div>
+
+          <div class="flex">
+            <div class="flex-500 website-mobile-screenshot">
+              <img src="/assets/stay/iphone6-stay-room.png" class="mobile" />
+              <img src="/assets/stay/ipad-stay-room.png" class="tablet" />
+            </div>
+            <p class="flex-1 website-mobile-text">
+              Tous nos sites sont optimisés pour les smarthpones et tablettes,
+              pratique pour vos visiteurs, ils pourront consulter votre site à n'importe quel moment, depuis n'importe quel endroit.
+            </p>
+          </div>
+
+          <div class="flex">
+            <p class="flex-1 website-support-text">
+              Pour votre communication, avec chaque site, nous vous fournissons un design pour vos carte de visite et flyers.
+              Un moyen efficace pour attirer de nouveaux clients.
+            </p>
+            <div class="flex-300 website-support">
+              <img src="/assets/stay/flyer-recto.png" class="flyer" />
+              <img src="/assets/stay/card-recto.png" class="card" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <script>
+      window.onload = function() {
+        var liame = ['jules', 'bous@gmail', 'com'].join('.')
+        var liameEl = document.querySelector('.liame')
+
+        liameEl.textContent = liame
+        liameEl.href = 'mailto:' + liame
+      }
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-19244753-8', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

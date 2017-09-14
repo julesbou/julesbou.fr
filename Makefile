@@ -1,5 +1,6 @@
 css:
-	lessc style.less | autoprefixer > style.css
+	scss scss/styles.scss styles.css --style compressed
+	autoprefixer-cli -o styles.css styles.css
 
 watch:
-		watchy -w style.less -- bash -c "make css"
+	chokidar 'scss/*.scss' -c 'make css'

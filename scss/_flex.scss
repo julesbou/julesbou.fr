@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    max-width: 100%;
+  }
+
+  >:first-child {
+    margin-right: 20px;
+  }
+}
+
+@for $i from 1 through 20 {
+  .flex-#{$i*50} {
+    flex: 0 0 50px * $i;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}

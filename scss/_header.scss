@@ -1,0 +1,42 @@
+.header {
+  padding-top: 0 !important;
+
+  &:before,
+  &:after {
+    background-color: #fff;
+  }
+}
+
+.header-logo {
+  float: left;
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: italic;
+
+  span {
+    opacity: .6;
+    margin-left: 2px;
+  }
+}
+
+.header-title {
+  color: #000;
+  font-size: 44px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 80px auto 20px;
+  text-transform: uppercase;
+
+  b {
+    display: block;
+    font-size: 24px;
+    text-transform: none;
+  }
+}
+
+.header-p {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
