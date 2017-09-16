@@ -18,7 +18,7 @@ main {
 section {
   position: relative;
   margin: 0;
-  padding: 40px 0 80px;
+  padding: 40px 0 120px;
 
   &:before,
   &:after {
@@ -88,5 +88,6 @@ h2 {
 
 @import '_header.scss';
 @import '_website.scss';
+@import '_ecommerce.scss';
 
 @import url(https://fonts.googleapis.com/css?family=Exo+2:500,600,900);
