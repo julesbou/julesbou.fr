@@ -1,0 +1,17 @@
+.contact {
+  &:before,
+  &:after {
+    background-color: #002b36;
+    height: calc(100% + 200px);
+  }
+
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.contact-p-center {
+  text-align: justify;
+  max-width: 550px;
+}
+
+
