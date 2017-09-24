@@ -14,4 +14,19 @@
   max-width: 550px;
 }
 
+.contact-box {
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
 
+  .contact-left {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-right {
+    flex: 0 0 200px;
+  }
+}

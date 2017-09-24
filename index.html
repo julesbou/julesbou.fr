@@ -18,6 +18,7 @@
       <section class="header">
         <div class="section-content">
           <div class="header-logo">Jules<span>Bou</span></div>
+          <a class="header-contact liame"></a>
           <h1 class="header-title">
             Createur de solutions performantes et efficaces
             <b>pour tous vos challenges en ligne</b>
@@ -76,7 +77,7 @@
           <h2>E-commerces</h2>
 
           <p class="ecommerce-p-center">
-            Un e-commerce rapide et facile d'utilisation pour vos visiteurs.
+            Un e-commerce complet, rapide et simple d'utilisation.
             Il vous permet de gérer efficacement vos produits, votre stock,
             votre carnet de clients, vos commandes et vos envois.
           </p>
@@ -93,8 +94,9 @@
             </div>
             <p class="flex-1 website-mobile-text">
               Magento, Prestashop ou Shopify. Nous avons de l'experience
-              avec les plus grande plateformes du marché, utilisez la
-              plus adaptée en fonction de la taille de votre projet et de votre budget.
+              avec les plus grande plateformes du marché, nous saurons vous conseiller
+              pour choisir la plateforme la plus adaptée en fonction de la taille de votre
+              projet et de votre budget.
             </p>
           </div>
 
@@ -112,16 +114,23 @@
           <h2>Contactez-nous</h2>
 
           <p class="contact-p-center">
-            Envoyez-nous un message descrivant les besoins de votre projet. Nous vous répondrons très rapidement.
+            Envoyez-nous un message descrivant les besoins de votre projet.
+            Nous vous répondrons avec des propositions concrètes.
           </p>
 
-          <p class="contact-p-center">
-            Notre email: <a class="liame"></a>
-          </p>
-
-          <p class="contact-p-center">
-            À très bientôt
-          </p>
+          <div class="contact-box">
+            <div class="contact-left">
+              <p class="contact-p-center">
+                Email: <a class="liame"></a>
+              </p>
+              <p class="contact-p-center">
+                À très bientôt
+              </p>
+            </div>
+            <div class="contact-right">
+              <img src="/assets/moi.jpg" class="me" />
+            </div>
+          </div>
 
         </div>
       </section>
@@ -131,10 +140,13 @@
     <script>
       window.onload = function() {
         var liame = ['jules', 'bous@gmail', 'com'].join('.')
-        var liameEl = document.querySelector('.liame')
+        var liameEls = document.querySelectorAll('.liame')
 
-        liameEl.textContent = liame
-        liameEl.href = 'mailto:' + liame
+        for (let i = 0; i < liameEls.length; i++) {
+          var liameEl = liameEls[i]
+          liameEl.textContent = liame
+          liameEl.href = 'mailto:' + liame
+        }
       }
     </script>
 
